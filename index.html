@@ -111,12 +111,12 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                4
+                5
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                1
-                <span>tag</span>
+                2
+                <span>tags</span>
             </div>
         </div>
         
@@ -213,7 +213,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwn3k18800025j0tgn8up6u9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwn3tn8d0001af0t8gr3l3mw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -352,7 +352,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwn3k18d00045j0tmrfp2t44" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwn3tn8i0003af0tft26x02k" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -481,7 +481,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwn3k18400005j0tzie91cln" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwn3tn8k0004af0tjd1yjfkx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -617,7 +617,148 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwn3k18f00055j0tub3b9po6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwn3tn540000af0t3sq66f9l" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-be-so-good-they-cant-ignore-you" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="2016/07/be-so-good-they-cant-ignore-you/">Steve Martin - ‘Be so good they can’t ignore you’</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="2016/07/be-so-good-they-cant-ignore-you/">
+            <time datetime="2016-07-31T23:18:35.000Z" itemprop="datePublished">2016-07-31</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="tags/quotes/">quotes</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/be-so-good-they-cant.png">
+<blockquote>
+<p>Craftsman mindset: Stop worrying about what your job offers you, and instead worry about what you’re offering the world.<br>Original article: <a href="http://lifehacker.com/5947649/steve-martins-advice-for-building-a-career-you-love" target="_blank" rel="external">http://lifehacker.com/5947649/steve-martins-advice-for-building-a-career-you-love</a></p>
+</blockquote>
+<h3 id="The-Passion-Hypothesis"><a href="#The-Passion-Hypothesis" class="headerlink" title="The Passion Hypothesis"></a>The Passion Hypothesis</h3><p>To simplify things, I’ll use the “passion hypothesis” to refer to the popular belief that the way to end up loving your career is to first figure out what you’re passionate about, and then pursue it (a strategy often summarized with the pithy phrase, “follow your passion.”) The more I studied this hypothesis, the more I noticed its danger. This idea convinces people that there’s a magic “right” job waiting for them, and that if they find it, they’ll immediately recognize that this is the work they were meant to do. The problem, of course, is when they fail to find this certainty, bad things follow, such as chronic job-hopping and crippling self-doubt.</p>
+<p>But without the passion hypothesis to guide us, what should we do instead? How do people really end up loving what they do? To answer this question we need to turn our attention to an unexpected career adviser.</p>
+<h3 id="Becoming-a-Craftsman"><a href="#Becoming-a-Craftsman" class="headerlink" title="Becoming a Craftsman"></a>Becoming a Craftsman</h3><p>In a 2007 episode of the Charlie Rose show, Rose was interviewing the actor and comedian Steve Martin about his memoir Born Standing Up. They talked about the realities of Martin’s rise. In the last five minutes of the interview, Rose asks Martin his advice for aspiring performers.</p>
+<p>“Nobody ever takes note of [my advice], because it’s not the answer they wanted to hear,” Martin said. “What they want to hear is ‘Here’s how you get an agent, here’s how you write a script,’ . . . but I always say, ‘Be so good they can’t ignore you.’ “</p>
+<p>In response to Rose’s trademark ambiguous grunt, Martin defended his advice: “If somebody’s thinking, ‘How can I be really good?’ people are going to come to you.”</p>
+<p>If you’re not focusing on becoming so good they can’t ignore you, you’re going to be left behind. This clarity is refreshing. It tells you to stop worrying about what your job offers you, and instead worry about what you’re offering the world. This mindset–which I call the craftsman mindset-allows you to sidestep the anxious questions generated by the passion hypothesis—“Who am I?”, “What do I truly love?”—and instead put your head down and focus on becoming valuable.</p>
+<p>Martin’s advice, however, offers more than just a strategy for avoiding job uncertainty. The more I studied it, the more convinced I became that it’s a powerful tactic for building a working life that you eventually grow to love. As I’ll explain below, regardless of how you feel about your job right now, adopting the craftsman mindset can be the foundation on which you build a compelling career.</p>
+<h3 id="Career-Capital-Theory"><a href="#Career-Capital-Theory" class="headerlink" title="Career Capital Theory"></a>Career Capital Theory</h3><p>Research shows that the traits that lead people to love their work are general, and can be found in many different career paths. They include things like autonomy, a sense of impact and mastery, creativity, and respect and recognition for your abilities. Once you recognize that these traits have little to do with following a pre-existing passion, and can be cultivated in many different fields, you can safely abandon the myth that there’s a single right job waiting out there for you.</p>
+<p>Of course, this still leaves open the question of how you gain these factors in your working life. One of the first things I noticed when I began to study this question is that these traits are rare. Most jobs, for example, don’t offer their employees great autonomy and the ability to make a big impact. If you’re a recent college graduate in an entry-level job, you’re much more likely to hear “go change the water cooler” than you are “go change the world.”</p>
+<p>By definition, we also know that these traits are valuable—as they’re the key to making a job great. But now we’re moving into well-trod territory. Basic economic theory tells us that if you want something that’s both rare and valuable, you need something rare and valuable to offer in return—this is Supply and Demand 101.</p>
+<p>When you hear the stories of people who ended up loving what they do, this same pattern comes up again and again. They start by painstakingly developing rare and valuable skills—which we can call career capital. They then leverage this capital to gain rare and valuable traits in their career. These traits lead to a feeling of passion about their working life. If career capital is the key to developing passion, then this explains the importance of Steve Martin’s craftsman mindset. By focusing on becoming so good they can’t ignore you, you’re maximizing the rate at which you acquire the capital you need to take control of your livelihood.</p>
+<h3 id="Passion-2-0"><a href="#Passion-2-0" class="headerlink" title="Passion 2.0"></a>Passion 2.0</h3><p>“Follow your passion” is an appealing idea because it’s simple and immediate. If you can figure out what you’re meant to do, it promises, a deep love for your career is just around the corner. The reality I’m proposing is less glamorous. It argues that passion takes time and hard work—harder work than most people naturally invest in their jobs. It’s also less certain in the sense that you cannot predict in advance the details of the compelling career you’re cultivating. But it compensates with clarity.</p>
+<p>Stop worrying about what the world owes you, it says, and instead, put your head down, like Steve Martin developing his act, and strive to become so good you can’t be ignored. It’s this straightforward goal—not some fairy tale about dropping everything to pursue a dream job—that will lead you toward a working life you love.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2016/07/be-so-good-they-cant-ignore-you/" data-id="ciwn3vi2j0000kj0tfg4epsvk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -778,6 +919,25 @@
                         </div>
                     </li>
                 
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="2016/07/be-so-good-they-cant-ignore-you/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="2016/07/be-so-good-they-cant-ignore-you/" class="title">Steve Martin - ‘Be so good they can’t ignore you’</a></p>
+                            <p class="item-date"><time datetime="2016-07-31T23:18:35.000Z" itemprop="datePublished">2016-07-31</time></p>
+                        </div>
+                    </li>
+                
             </ul>
         </div>
     </div>
@@ -787,7 +947,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/07/">July 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -796,7 +956,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="tags/book-review/" style="font-size: 10px;">book-review</a>
+            <a href="tags/book-review/" style="font-size: 20px;">book-review</a> <a href="tags/quotes/" style="font-size: 10px;">quotes</a>
         </div>
     </div>
 
