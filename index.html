@@ -111,11 +111,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                6
+                7
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                2
+                3
                 <span>tags</span>
             </div>
         </div>
@@ -213,7 +213,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwn3xzsi0003ve0tp1ajorrj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwrg95ct0008pc0taf2z8q68" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -313,12 +313,12 @@
 
 
                         
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="categories/book-review/">book-review</a>
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="tags/book-review/">book-review</a>
     </div>
 
-                        
                     </div>
                 
             </header>
@@ -352,7 +352,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwn3xzsk0004ve0t9qvbaomv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwrg95cq0005pc0t2udh3v57" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -481,7 +481,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwn3xzse0001ve0thaoxwukj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwrg95ci0001pc0trhxs4vkx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -617,7 +617,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwn3xzsn0005ve0t2vqd2c4g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwrg95dg000hpc0thj1k06zc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -759,7 +759,7 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/07/be-so-good-they-cant-ignore-you/" data-id="ciwn3xzsa0000ve0tzoiv7yz1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/07/be-so-good-they-cant-ignore-you/" data-id="ciwrg95cf0000pc0t3xk0ds1f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -898,7 +898,140 @@
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/07/debugging-the-9-rules/" data-id="ciwomksno0000qi0tvs2c0u0s" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/07/debugging-the-9-rules/" data-id="ciwrg95co0004pc0tss9be0lt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-on-picking-code-editor" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="2016/07/on-picking-code-editor/">On Picking Code Editor</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="2016/07/on-picking-code-editor/">
+            <time datetime="2016-07-04T23:18:35.000Z" itemprop="datePublished">2016-07-04</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="tags/tools/">tools</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/on-picking-code-editor.png">
+<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>Happy July 4th! During the holiday I’ve decided to take another look at the new shiny Atom/Nuclide code editor. Although I’ve spend a couple of years on Sublime test, and a year or so on Emacs, exploring great tools it still great fun.</p>
+<p>After poking around for three hours, it turns out to be a NO. And I would like to reason about it.</p>
+<h3 id="Modal-editing-is-a-blessing"><a href="#Modal-editing-is-a-blessing" class="headerlink" title="Modal editing is a blessing"></a>Modal editing is a blessing</h3><p>As discussed in a previous post, the majority of the time spent in text editors is actually browsing around. Atom really shines at displaying code in a beautiful GUI, and it offers fuzzy search of file names that are on par with all of other editors. However when it comes to defining clear modal contexts, it falls short.</p>
+<p>Vim/emacs are defined with clear context in mind, which allows maximum knowledge transfer after one learns about the basic of one context. If you are in a grep-mode, you can expect all the shortcuts (most important ones are ‘n’ and ‘p’) to work in that context. In Atom it’s a chaos of interfaces. Each plugin tries to define some unique UI that does not follow the convention of the others. And the shared context is nowhere defined.</p>
+<h3 id="Command-line-efficiency"><a href="#Command-line-efficiency" class="headerlink" title="Command line efficiency"></a>Command line efficiency</h3><p>I spend a great amount of my day working in terminal window, which is a great time-saver. For almost all known tools, command-line versions have less bugs and run much faster. The performance for Emacs to open a file is noticeably faster than atom. Same for syntax highlighting and automatic styling code.</p>
+<p>For finding hidden features in the editor, all editors evolved into some search solution. On Atom this is achieved with command palette fuzzy search, on Emacs this is done via ido.el/helm.el. In a GUI setting Atom wins for much easier access to commands and descriptions for each selection.</p>
+<h3 id="After-all-coding-speed-is-limited-in-thoughts-not-tools"><a href="#After-all-coding-speed-is-limited-in-thoughts-not-tools" class="headerlink" title="After all, coding speed is limited in thoughts, not tools"></a>After all, coding speed is limited in thoughts, not tools</h3><p>For over 50 years, engineers are stuck on keyboards and they have yet to discover/input a better input device. If this does not change, the efficiency for human-code interaction is not likely to see a dramatic change simply from improving current tools.</p>
+<p>In a nutshell, software is purely thought stuff. And for most engineers, the real bottleneck for productivity is actually the speed of organizing thoughts. It would certainly be easier with better tools. But as far as thoughts are organized into texts, mainstream editors are almost equal at efficiency.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2016/07/on-picking-code-editor/" data-id="ciwrg95cm0003pc0tuyd74x0u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1015,7 +1148,7 @@
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="categories/book-review/">book-review</a></p>
+                            <p class="item-category"></p>
                             <p class="item-title"><a href="2016/11/hackers-and-painters/" class="title">Hackers and Painters - Paul Graham</a></p>
                             <p class="item-date"><time datetime="2016-11-19T06:50:56.000Z" itemprop="datePublished">2016-11-18</time></p>
                         </div>
@@ -1087,7 +1220,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/07/">July 2016</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -1096,7 +1229,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="tags/book-review/" style="font-size: 20px;">book-review</a> <a href="tags/quotes/" style="font-size: 10px;">quotes</a>
+            <a href="tags/book-review/" style="font-size: 20px;">book-review</a> <a href="tags/quotes/" style="font-size: 10px;">quotes</a> <a href="tags/tools/" style="font-size: 10px;">tools</a>
         </div>
     </div>
 
