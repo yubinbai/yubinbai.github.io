@@ -122,7 +122,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                9
+                10
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -163,6 +163,140 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-anki-essentials" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="2016/12/anki-essentials/">Anki Essentials: the Complete Guide to Remembering Anything with Anki</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="2016/12/anki-essentials/">
+            <time datetime="2016-12-19T00:18:35.000Z" itemprop="datePublished">2016-12-18</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="tags/book-review/">book-review</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/anki-essentials.png">
+<p>Original: <a href="https://alexvermeer.com/anki-essentials/" target="_blank" rel="external">Anki Essentials</a></p>
+<h3 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h3><p>‘Anki’ is, so far, my favorite app for <a href="https://www.gwern.net/Spaced%20repetition" target="_blank" rel="external">spaced-repetition memorization</a>. I’ve used it for 3 years straight, almost every single day, both on laptop and my purchased iPhone app. It’s the best time investment I’ve made in my knowledge life. Wondered a million times before: what if I had it in college, life would be insanely easy…. ;)<br>Although a big fan, there are many corners of the software I still don’t know about, and ‘Anki Essentials’ came to rescue.</p>
+<h3 id="User-guide-rather-than-App-documentation"><a href="#User-guide-rather-than-App-documentation" class="headerlink" title="User guide rather than App documentation"></a>User guide rather than App documentation</h3><p>This 120 pages long pdf is by far the best comprehensive user guide I’ve found for Anki. We sure get a decent document for the app itself, well maintained <a href="http://ankisrs.net/docs/manual.html" target="_blank" rel="external">here</a>. However it doesn’t serve the purpose for explaining the power of Anki to a beginner. And I think this is where the best value comes. As a frequent user, I also find various tips about making Notes and Cards; as well as various ideas about getting Anki study sessions more effective. </p>
+<h3 id="Background-and-‘the-20-rules’"><a href="#Background-and-‘the-20-rules’" class="headerlink" title="Background and ‘the 20 rules’"></a>Background and ‘the 20 rules’</h3><p>A lot of pitfalls for using flash cards boil down to poorly made notes. As for me, the biggest take-home points are:</p>
+<ul>
+<li>Customize the notes at the sweet spot, Anki decks are extensions of building <strong>personal</strong> knowledge.</li>
+<li>Follow the best practices in authoring flash cards, best resource on Internet is <a href="http://yubinbai.com/2016/03/effective-learning/">‘the 20 rules’</a> developed in the 90s.</li>
+</ul>
+<h3 id="Follow-up"><a href="#Follow-up" class="headerlink" title="Follow-up"></a>Follow-up</h3><p>Currently experimenting with image cloze deletion notes making. Hopefully this will help in understanding design patterns and learning patter diagrams.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2016/12/anki-essentials/" data-id="ciwvehzr100004m6n3gbci585" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-sicp" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -224,7 +358,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwu7jcj7000k3g0tf5a1rvz2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/sicp/" data-id="ciwvehzrz000c4m6n7hicjxsp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -363,7 +497,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwu7jciz000e3g0t4aacgc3h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/11/hackers-and-painters/" data-id="ciwvehzs3000f4m6nlndbrxha" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -492,7 +626,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwu7jci500043g0t41uf8n19" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/09/clean-code/" data-id="ciwvehzrv00064m6na21mo7h7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -628,7 +762,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwu7jcj4000i3g0ttbffzxrw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/08/the-little-schemer/" data-id="ciwvehzs7000j4m6nerfg7bmp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -770,7 +904,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/07/be-so-good-they-cant-ignore-you/" data-id="ciwu7jchv00003g0tpilypgsz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/07/be-so-good-they-cant-ignore-you/" data-id="ciwvehzrr00034m6nu4b239tk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -909,7 +1043,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/07/debugging-the-9-rules/" data-id="ciwu7jci400033g0thzi5xzk0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/07/debugging-the-9-rules/" data-id="ciwvehzrw00084m6n1kgnmn3d" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1042,7 +1176,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/07/on-picking-code-editor/" data-id="ciwu7jcj2000g3g0tk3anjnvh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/07/on-picking-code-editor/" data-id="ciwvehzry000a4m6nkib78w6l" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1170,7 +1304,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/06/code-hidden-language/" data-id="ciwu7jci000013g0tkkai5sg1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/06/code-hidden-language/" data-id="ciwvehzrt00044m6n3gets2b2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1313,7 +1447,7 @@ ga('send', 'pageview');
 <li><strong>Prioritize</strong> - effective learning is all about prioritizing. In incremental reading you can start from badly formulated knowledge and improve its shape as you proceed with learning. If needed, you can review pieces of knowledge again, split it into parts, reformulate, re-prioritize, or delete.</li>
 </ul>
 <h1 id="Do-not-learn-if-you-do-not-understand"><a href="#Do-not-learn-if-you-do-not-understand" class="headerlink" title="Do not learn if you do not understand"></a>Do not learn if you do not understand</h1><p>Trying to learn things you do not understand may seem like an utmost nonsense. Still, an amazing proportion of students commit the offense of learning without comprehension. Very often they have no other choice! The quality of many textbooks or lecture scripts is deplorable while examination deadlines are unmovable.If you are not a speaker of German, it is still possible to learn a history textbook in German. The book can be crammed word for word. However, the time needed for such “blind learning” is astronomical. Even more important: The value of such knowledge is negligible. If you cram a German book on history, you will still know nothing of history.<br>The German history book example is an extreme. However, the materials you learn may often seem well structured and you may tend to blame yourself for lack of comprehension. Soon you may pollute your learning process with a great deal of useless material that treacherously makes you believe “it will be useful some day”.</p>
-<h1 id="Learn-before-you-memorize"><a href="#Learn-before-you-memorize" class="headerlink" title="Learn before you memorize"></a>Learn before you memorize</h1><p>Before you proceed with memorizing individual facts and rules, you need to build an overall picture of the learned knowledge. Only when individual pieces fit to build a single coherent structure, will you be able to dramatically reduce the learning time. This is closely related to the problem comprehension mentioned in Rule 1: Do not learn if you do not understand. A single separated piece of your picture is like a single German word in the textbook of history.Do not start from memorizing loosely related facts! First read a chapter in your book that puts them together (e.g. the principles of the internal combustion engine). Only then proceed with learning using individual questions and answers (e.g. What moves the pistons in the internal combustion engine?), etc.</p>
+<h1 id="Start-with-the-big-picture"><a href="#Start-with-the-big-picture" class="headerlink" title="Start with the big picture"></a>Start with the big picture</h1><p>Before you proceed with memorizing individual facts and rules, you need to build an overall picture of the learned knowledge. Only when individual pieces fit to build a single coherent structure, will you be able to dramatically reduce the learning time. This is closely related to the problem comprehension mentioned in Rule 1: Do not learn if you do not understand. A single separated piece of your picture is like a single German word in the textbook of history.Do not start from memorizing loosely related facts! First read a chapter in your book that puts them together (e.g. the principles of the internal combustion engine). Only then proceed with learning using individual questions and answers (e.g. What moves the pistons in the internal combustion engine?), etc.</p>
 <h1 id="Build-upon-the-basics"><a href="#Build-upon-the-basics" class="headerlink" title="Build upon the basics"></a>Build upon the basics</h1><p>The picture of the learned whole (as discussed in Rule 2: Learn before you memorize) does not have to be complete to the last detail. Just the opposite, the simpler the picture the better. The shorter the initial chapter of your book the better. Simple models are easier to comprehend and encompass. You can always build upon them later on.Do not neglect the basics. Memorizing seemingly obvious things is not a waste of time! Basics may also appear volatile and the cost of memorizing easy things is little. Better err on the safe side. Remember that usually you spend 50% of your time repeating just 3-5% of the learned material [source]! Basics are usually easy to retain and take a microscopic proportion of your time. However, each memory lapse on basics can cost you dearly!</p>
 <h1 id="Stick-to-the-minimum-information-principle"><a href="#Stick-to-the-minimum-information-principle" class="headerlink" title="Stick to the minimum information principle"></a>Stick to the minimum information principle</h1><p>The material you learn must be formulated in as simple way as it is.</p>
 <h2 id="Simple-is-easy"><a href="#Simple-is-easy" class="headerlink" title="Simple is easy"></a>Simple is easy</h2><p>By definition, simple material is easy to remember. This comes from the fact that its simplicity makes is easy for the brain to process it always in the same way. Imagine a labyrinth. When making a repetition of a piece of material, your brain is running through a labyrinth (you can view a neural network as a tangle of paths). While running through the labyrinth, the brain leaves a track on the walls. If it can run in only one unique way, the path is continuous and easy to follow. If there are many combinations, each run may leave a different trace that will interfere with other traces making it difficult to find the exit. The same happens on the cellular level with different synaptic connections being activated at each repetition of complex material</p>
@@ -1446,7 +1580,7 @@ A: glucocorticoid response element
 
 </div>
 
-    <a data-url="http://yubinbai.com/2016/03/effective-learning/" data-id="ciwu7jciv000c3g0tuoflv9e8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2016/03/effective-learning/" data-id="ciwvehzs6000h4m6ntvp7ywkc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1535,6 +1669,15 @@ A: glucocorticoid response element
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
+                            <p class="item-title"><a href="2016/12/anki-essentials/" class="title">Anki Essentials: the Complete Guide to Remembering Anything with Anki</a></p>
+                            <p class="item-date"><time datetime="2016-12-19T00:18:35.000Z" itemprop="datePublished">2016-12-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
                             <p class="item-title"><a href="2016/11/sicp/" class="title">Structure and Interpretation of Computer Programs (SICP) - Ableson &amp; Sussman</a></p>
                             <p class="item-date"><time datetime="2016-11-21T06:50:56.000Z" itemprop="datePublished">2016-11-20</time></p>
                         </div>
@@ -1567,15 +1710,6 @@ A: glucocorticoid response element
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="2016/07/be-so-good-they-cant-ignore-you/" class="title">‘Be so good they can’t ignore you’ - Steve Martin</a></p>
-                            <p class="item-date"><time datetime="2016-07-31T23:18:35.000Z" itemprop="datePublished">2016-07-31</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1585,7 +1719,7 @@ A: glucocorticoid response element
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/03/">March 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/09/">September 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="archives/2016/03/">March 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
