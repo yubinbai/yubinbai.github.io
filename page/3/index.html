@@ -122,7 +122,7 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                46
+                47
                 <span>posts</span>
             </div>
             <div class="article-info-block">
@@ -163,6 +163,136 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-code-complete" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2015/09/code-complete/">Code Complete - Steve McConnell</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2015/09/code-complete/">
+            <time datetime="2015-09-20T23:18:35.000Z" itemprop="datePublished">2015-09-20</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/book-review/">book-review</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/code-complete.jpg">
+<h1 id="Overall"><a href="#Overall" class="headerlink" title="Overall"></a>Overall</h1><p>‘Code Complete’ is the very first book I’ve read about software engineering topic. This is a huge book of 900 pages!. From the 35 chapters, the most meaningful point I’ve discovered is the analogy between software engineering and <strong>construction engineering</strong>, where a piece of useful software is generated much of the same way as a physical building is completed.</p>
+<p>Plan, Design, Implementation, Monitoring, Testing,  Delivery. Although software is most of a creative product, it still needs a good amount of tedious routine work to become a useful product. Much like a modern skyscraper, maintenance is a major part of software cost and must be considered at the very first step of software planning and requirement specification.</p>
+<h1 id="Verdict"><a href="#Verdict" class="headerlink" title="Verdict"></a>Verdict</h1><p>Although new organization ideas are getting invented all the time, ‘Code complete’ is a must-read classics. It also has huge influence in academia as well, recommended to any software professional.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2015/09/code-complete/" data-id="cj2fcvdxg000ad16nlk69nt11" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2015/09/code-complete/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2015/09/code-complete/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-operating-system-concepts" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -214,7 +344,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/09/operating-system-concepts/" data-id="cj2fcrijn001f6g6nyw1tsejv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/09/operating-system-concepts/" data-id="cj2fcvdy9001jd16ns574cf4q" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -344,7 +474,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/09/programming-pearls/" data-id="cj2fcrijr001o6g6nogl5kqrz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/09/programming-pearls/" data-id="cj2fcvdyd001sd16nwafl1icr" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -474,7 +604,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/06/starting-in-silicon-valley/" data-id="cj2fcrik000226g6nux8fhz65" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/06/starting-in-silicon-valley/" data-id="cj2fcvdyn0022d16n5cai232o" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -612,7 +742,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/06/practical-vim/" data-id="cj2fcrijq001l6g6nptxnf7fi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/06/practical-vim/" data-id="cj2fcvdyb001od16n15fd5eoh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -742,7 +872,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/05/programming-contest-challenge/" data-id="cj2fcrijs001s6g6n7d4jw1m1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/05/programming-contest-challenge/" data-id="cj2fcvdyc001qd16n71gtuqn8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -873,7 +1003,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/05/advanced-programming-in-the-unix-environment/" data-id="cj2fcriih00026g6n133liq7g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/05/advanced-programming-in-the-unix-environment/" data-id="cj2fcvdti0000d16n7ikppqh4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1047,7 +1177,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/05/shi-shen-me-zao-jiu-yi-ge-ren-de-cheng-gong/" data-id="cj2fcrijv001u6g6n8j41a7mx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/05/shi-shen-me-zao-jiu-yi-ge-ren-de-cheng-gong/" data-id="cj2fcvdyl001yd16nrlrb7tze" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1177,7 +1307,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/02/refactoring-improving-the-design-of-existing-code/" data-id="cj2fcrijr001q6g6n8ob6vwsn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/02/refactoring-improving-the-design-of-existing-code/" data-id="cj2fcvdyk001wd16ncnemsu64" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1307,7 +1437,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2015/02/modern-compiler-implementation-in-java/" data-id="cj2fcrijl00196g6nrcy8ayb0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2015/02/modern-compiler-implementation-in-java/" data-id="cj2fcvdy3001cd16ntzf23ztp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1385,130 +1515,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-warehouses-use-xml" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2015/01/warehouses-use-xml/">Warehouses still use XML exclusively</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2015/01/warehouses-use-xml/">
-            <time datetime="2015-01-21T00:18:35.000Z" itemprop="datePublished">2015-01-20</time>
-        </a>
-    </div>
-
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <img src="/images/warehouses-use-xml.jpg">
-<p>Though the whole web community has shifted away from the fatty XML documents format to the lighter JSON objects. Many business sectors still not taking any moves to go out this way.</p>
-<p>The growth of online retailers have pushed hard to get better APIs. However the whole transportation industry relies on software based on exchange of static files rather than ephemeral web requests and responses.</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yubinbai.com/2015/01/warehouses-use-xml/" data-id="cj2fcrik7002i6g6n0zoqqcqc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://yubinbai.com/2015/01/warehouses-use-xml/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2015/01/warehouses-use-xml/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <nav id="page-nav">
         <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
     </nav>
@@ -1576,7 +1582,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/04/">April 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">March 2013</a><span class="archive-list-count">5</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/04/">April 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">March 2013</a><span class="archive-list-count">5</span></li></ul>
         </div>
     </div>
 
@@ -1585,7 +1591,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/book-review/" style="font-size: 20px;">book-review</a> <a href="/tags/career/" style="font-size: 16.67px;">career</a> <a href="/tags/quote/" style="font-size: 13.33px;">quote</a> <a href="/tags/quotes/" style="font-size: 13.33px;">quotes</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a>
+            <a href="/tags/book-review/" style="font-size: 20px;">book-review</a> <a href="/tags/career/" style="font-size: 17.5px;">career</a> <a href="/tags/quote/" style="font-size: 12.5px;">quote</a> <a href="/tags/quotes/" style="font-size: 15px;">quotes</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a>
         </div>
     </div>
 
