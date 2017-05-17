@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2013/3 | Coding Yubin</title>
+    <title>Coding Yubin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="Coding Yubin">
-<meta property="og:url" content="http://yubinbai.com/archives/2013/03/index.html">
+<meta property="og:url" content="http://yubinbai.com/page/7/index.html">
 <meta property="og:site_name" content="Coding Yubin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Coding Yubin">
@@ -162,200 +162,159 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><div class="timeline timeline-wrap">
-    
-            <div class="timeline-row timeline-row-major">
-                <span class="node"><i class="fa fa-calendar"></i></span>
-                <h1 class="title">2013</h1>
-            </div>
+            <section id="main">
+    <article id="post-parameter-passing-in-java" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+        
+            <header class="article-header">
                 
     
         <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/being-realistic-to-mediocrity/">Being Realistic is the Most Commonly Traveled Road to Mediocrity</a>
+            <a class="article-title" href="/2012/12/parameter-passing-in-java/">Parameter passing in Java - by reference or by value?</a>
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2013/03/being-realistic-to-mediocrity/">
-            <time datetime="2013-03-26T23:18:35.000Z" itemprop="datePublished">2013-03-26</time>
+        <a href="/2012/12/parameter-passing-in-java/">
+            <time datetime="2012-12-16T04:15:35.000Z" itemprop="datePublished">2012-12-15</time>
         </a>
     </div>
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/take-things-away-until-you-cry/">Creative Pro Tip: Take Things Away Until You Cry</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/03/take-things-away-until-you-cry/">
-            <time datetime="2013-03-22T23:18:35.000Z" itemprop="datePublished">2013-03-22</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/in-praise-of-the-long-thought/">In Praise of The Long Thought</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/03/in-praise-of-the-long-thought/">
-            <time datetime="2013-03-14T23:18:35.000Z" itemprop="datePublished">2013-03-14</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/phone-interview-tips/">Phone Interview Tips</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/03/phone-interview-tips/">
-            <time datetime="2013-03-13T23:18:35.000Z" itemprop="datePublished">2013-03-13</time>
-        </a>
-    </div>
-
-
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/career/">career</a>
     </div>
 
-                </div>
-            </div>
-        </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+                    </div>
                 
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/withhold-answers-from-yourself/">Withhold Answers from Yourself to Help You Learn Better</a>
-        </h1>
-    
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h2 id="Myth-“Objects-are-passed-by-reference-primitives-are-passed-by-value”"><a href="#Myth-“Objects-are-passed-by-reference-primitives-are-passed-by-value”" class="headerlink" title="Myth: “Objects are passed by reference, primitives are passed by value”"></a>Myth: “Objects are passed by reference, primitives are passed by value”</h2><p>Some proponents of this then say, “Ah, except for immutable objects which are passed by value [etc]” which introduces loads of rules without really tackling how Java works. Fortunately the truth is much simpler:</p>
+<blockquote>
+<p>Truth #1: Everything in Java is passed by value. Objects, however, are never passed at all.</p>
+</blockquote>
+<p>That needs some explanation - after all, if we can’t pass objects, how can we do any work? The answer is that we pass references to objects. That sounds like it’s getting dangerously close to the myth, until you look at truth #2:</p>
+<blockquote>
+<p>Truth #2: The values of variables are always primitives or references, never objects.</p>
+</blockquote>
+<p>This is probably the single most important point in learning Java properly.<br>It’s amazing how far you can actually get without knowing it, in fact - but vast numbers of things suddenly make sense when you grasp it.</p>
+<h2 id="Why-is-all-this-important"><a href="#Why-is-all-this-important" class="headerlink" title="Why is all this important?"></a>Why is all this important?</h2><p>When people hear the words “pass by reference”, they may understand different things by the words. There are some pretty specific definitions of what it should mean, however. Dale King sometimes quotes this one: “The lvalue of the formal parameter is set to the lvalue of the actual parameter.” (Dale’s formal analysis of this whole question can be found at the bottom of this page.) This would mean that if you wrote the following code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Object x = null;</div><div class="line">giveMeAString(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeAString(Object y) &#123;</div><div class="line">  y = &quot;This is a string&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>the result (if Java used pass-by-reference semantics) would be</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This is a string</div></pre></td></tr></table></figure>
+<p>instead of the actual result:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">null</div></pre></td></tr></table></figure></p>
+<p>Explaining the two truths above eliminates all of this confusion.</p>
+<p>So what does passing a reference by value actually mean?</p>
+<blockquote>
+<p>It means you can think of references how you think of primitives, to a large extent. </p>
+</blockquote>
+<p>For instance, the equivalent to the above bit of code using primitives would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">int x = 0;</div><div class="line">giveMeATen(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeATen (int y) &#123;</div><div class="line">  y = 10;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="The-balloon-analogy"><a href="#The-balloon-analogy" class="headerlink" title="The balloon analogy"></a>The balloon analogy</h1><p>I imagine every object as a helium balloon, every reference as a piece of string, and every variable as something which can hold onto a piece of string. </p>
+<p>If the reference is a null reference, that’s like having a piece of string without anything attached to the end. If it’s a reference to a genuine object, it’s a piece of string tied onto the balloon representing that object. When a reference is copied (either for variable assignment or as part of a method call) it’s as if another piece of string is created attached to whatever the first piece of string is attached to. The actual piece of string the variable (if any) is holding onto doesn’t go anywhere - it’s only copied.</p>
+<p>This analogy also explains garbage collection (apart from the java.lang.ref API, which does “odd” things :) - a balloon floats away unless it is tethered down to something. The balloons can have further holders on them (instance variables), but just because two balloons are holding onto each other doesn’t stop them from floating away. (Cyclic references are collected.) Any balloon representing an object which is in the middle of having a method invoked is tethered to the JVM. (Apologies for not being able to phrase that more succinctly - all I mean is that anything in an active thread’s stack isn’t garbage collected.)</p>
 
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/03/withhold-answers-from-yourself/">
-            <time datetime="2013-03-07T00:18:35.000Z" itemprop="datePublished">2013-03-06</time>
-        </a>
-    </div>
-
-
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/career/">career</a>
-    </div>
-
-                </div>
-            </div>
+        
         </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
-                
-    
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2013/03/do-less-and-focus-hard/">Do Less and Focus Hard: If You&#39;re Busy, You&#39;re Doing Something Wrong</a>
-        </h1>
-    
-
-                <div class="article-meta">
-                    
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/03/do-less-and-focus-hard/">
-            <time datetime="2013-03-06T00:18:35.000Z" itemprop="datePublished">2013-03-05</time>
-        </a>
-    </div>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
-                    
-                    
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/career/">career</a>
-    </div>
 
-                </div>
-            </div>
-        </div>
-    
 </div>
+
+    <a data-url="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-id="cj2sh0z12001t836neb4q5ouh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2012/12/parameter-passing-in-java/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/parameter-passing-in-java/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <nav id="page-nav">
+        <a class="extend prev" rel="prev" href="/page/6/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+    </nav>
 </section>
             
                 <aside id="sidebar">
