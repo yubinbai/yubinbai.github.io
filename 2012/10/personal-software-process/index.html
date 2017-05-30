@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Personal Software Process | Coding Yubin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="The Personal Process StrategyA personal software process is something that you use to guide your work.  The Baseline Personal ProcessA defined process can help you understand your performance as a s">
+<meta name="keywords" content="book-review">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Personal Software Process">
+<meta property="og:url" content="http://yubinbai.com/2012/10/personal-software-process/index.html">
+<meta property="og:site_name" content="Coding Yubin">
+<meta property="og:description" content="The Personal Process StrategyA personal software process is something that you use to guide your work.  The Baseline Personal ProcessA defined process can help you understand your performance as a s">
+<meta property="og:image" content="http://yubinbai.com/images/personal-software-process.jpg">
+<meta property="og:updated_time" content="2017-05-30T06:24:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Personal Software Process">
+<meta name="twitter:description" content="The Personal Process StrategyA personal software process is something that you use to guide your work.  The Baseline Personal ProcessA defined process can help you understand your performance as a s">
+<meta name="twitter:image" content="http://yubinbai.com/images/personal-software-process.jpg">
+    
+
+    
+        <link rel="alternate" href="https://yubinbai.wordpress.com" title="Coding Yubin" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-34379241-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Coding Yubin</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">Home</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://www.gravatar.com/avatar/10f8548ab669a97dba805fb0da75e2ea" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"> </button><input type="hidden" name="sitesearch" value="http://yubinbai.com"></form>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                <td>
+                    
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://yubinbai.com"></form>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://www.gravatar.com/avatar/10f8548ab669a97dba805fb0da75e2ea?s=128" />
+            <h2 id="name">Yubin</h2>
+            <h3 id="title">Developer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>SF bay area</span>
+            <a id="follow" target="_blank" href="https://facebook.com/coding.yubin">FOLLOW</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                70
+                <span>posts</span>
+            </div>
+            <div class="article-info-block">
+                5
+                <span>tags</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/yubinbai" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://facebook.com/yubin.bai" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="https://yubinbai.wordpress.com" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-personal-software-process" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            Personal Software Process
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2012/10/personal-software-process/">
+            <time datetime="2012-10-30T23:18:35.000Z" itemprop="datePublished">2012-10-30</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/book-review/">book-review</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/personal-software-process.jpg">
+<ol>
+<li><p>The Personal Process Strategy<br>A personal software process is something that you use to guide your work.</p>
+</li>
+<li><p>The Baseline Personal Process<br>A defined process can help you understand your performance as a software developer and to see where and how to improve.<br>With PSP0, you measure the time spent in each development phase and the defects you inject, find, and fix.<br>Use a support tool to record time and defect data.</p>
+</li>
+<li><p>Measuring Software Size<br>Reason in measuring software size: planning use. The size measure should correlate to development effort, be precise, and be automatically countable.<br>Typical size measures are database elements, source program lines of code, pages of design or text, and function points.<br>Counting logical lines by using a coding standard and a physical counter.<br>For each program version, you need to know the number of added and deleted elements or lines.<br>A practical way is to use a line counter program to compare the current version and its predecessor.<br>Well-defined and consistently used size measures can provide the data needed to make accurate size and development estimates. Size data are also useful for comparing defect rates among programs.</p>
+</li>
+<li><p>Planning<br>Planning is the first step in the PSP for three reasons:<br>Without good plans you cannot effectively manage even modestly sized software projects.<br>planning is a skill you can learn and improve with practice. If you don’t learn how to make good plans now, it’s almost impossible to pick up on the job.<br>good planning skills will help you do better software work.<br>In software engineering, as in other fields, the role of the developer is to devise economical and timely solutions to the employer’s needs. Making plans that accurately represent what you will do.</p>
+</li>
+<li><p>Software Estimating<br>Estimates are generally required before you can being development.<br>At early stage, you may generally understand the requirements but know little else about the project.<br>A proxy is needed to relate product size to the required product functions.<br>The criteria for a good proxy are that its size should be closely related to the effort needed to develop the product and that it can be automatically counted.<br>It should be easy to visualize at the beginning of the job and be sensitive to language, style, and design differences that might affect the development effort.<br>In using proxy, divide data into ranges that correspond to the sizes of the proxy items in database, label them VL, L, M, S, VS.</p>
+</li>
+<li><p>The PROBE Estimating Method<br>The quality of plans will depend on the quality of estimates. The accuracy, in turn, will depend on the quality of the data and the soundness of the estimating method you use.<br>The PROBE method provides a statistically sound way to make estimates.<br>When using PROBE, you gather estimated and actual size and time data for each project. Then you divide the data into categories and size ranges. The estimating process starts with a conceptual design followed by an estimate of the PROBE method shows you how to estimate program size and development time.<br>Two sources of error: estimating accuracy will fluctuate around some mean or average; the estimate will typically have some bias.</p>
+</li>
+<li><p>Software Planning<br>Once you have estimated the size and development time for a project, you can produce the project schedule.<br>With an estimate of the hours you will spend on project tasks each week, you can spread the estimated development time over the project schedule.<br>Weekly task hours are usually 50% of the working time.<br>You can calculate when each task will start and end, and also get dates for the key point milestones.<br>Earned value provides a way to measure and track job progress. It establishes a planned value for every week based on the task’s percentage of total project development time.<br>Earned value provides a common measure for the value of every task, regardless of the type of work involved.</p>
+</li>
+<li><p>Software Quality<br>To improve the quality of your software, focus on the process required to consistently produce quality products. Seek the most effective methods for finding defects and the most effective ways to prevent them.<br>The cost of finding and fixing defects escalate rapidly the longer the defects remain in the product.<br>The most cost-effective strategy is to ensure that all program elements are of the highest quality when first produced.<br>Defects are rarely the user’s top priority, but they are an essential focus on PSP. This is because defects are most economically and effectively handled at the individual level.<br>Software quality is an economics issue. You can always run another test or do another inspection.<br>PSP provides the data needed to calculate measures for yield, cost of quality, rates and ratios, and the process quality index (PQI).<br>The software process can be viewed as the combination of two competing processes: defect injection and defect removal.</p>
+</li>
+<li><p>Design and Code Reviews<br>The purpose of a review is to efficiently produce a high-quality program. The principal kinds of reviews are inspections, walkthroughs, and personal reviews.<br>Reviews should be done for the requirements, the design, the documentation, and all other product elements.<br>Design and code reviews are much more effective than testing for finding and fixing many defects.<br>Reviews find defects directly, while testing provide symptoms.<br>Reviews provide a greater return on your personal time than any other single thing you can do.<br>Read each program, study it, and understand it. Then fix the defects, the logic, the structure, and the clarity.<br>Learn to rewrite programs. When areas are not unclear of confusing, add comments, or better yet, do a complete rewrite.<br>To determine whether reviews are helping to achieve goals, measure them. Use a Pareto distribution to establish review priorities and to develop a review checklist. Re-examine the Pareto distribution periodically.</p>
+</li>
+<li><p>Software Design<br>Many of software development’s historic problems have stemmed from a misplaced expectation that development should start with firm and complete requirements. History demonstrates, however, that for a new software system, the requirement will not be completely known until after you have a working product, and possibly not even then.<br>The design phase of large-scale software systems typically start with a high-level system design effort that subdivides the product into components. And each components are separately developed and system is integrated.<br>A well-founded development strategy is built on the natural structure of the planned products.<br>Although there are many possible development strategies, they are all different forms of divide-and-conquer.<br>There are two aspects to software design: how to produce the design and how to represent that design once it is produced.</p>
+</li>
+<li><p>The PSP Design Templates<br>In PSP, designs are described with the aid of four templates:<br>The Operational Specification Template describes the program’s operational behavior via one or more scenarios.<br>The Functional Specification Template describes the functions performed by a program, a class, or a procedure.<br>The Logic Specification Template uses pseudo-code to precisely describe a program’s logic.<br>The State Specification Template describes the program’s state behavior.<br>You can use these templates to specify the internal and external behavior of both large systems and small systems, as well as the behavior of their parts.<br>The intent is for developers to produce designs in whatever methods work best for them and record these designs in the PSP templates.</p>
+</li>
+<li><p>Design Verification<br>The objective of design verification is to determine whether a design meets its requirements and is correct.<br>Methods: trace table, state-machine analysis, analytical verification.<br>Using these methods saves time because when your designs are complete, clear, and correct, the implementation will be faster and the finished product will have few design defects.<br>Although trace table is time-consuming, it is much faster and more effective than verifying all possible cases with testing.<br>Conditions for a correct state machine: all state transitions should be complete and orthogonal; the machine must be able to reach a program return state from every other state.<br>Verifying design correctness is simple in concept, but it takes time to build sufficient skill to do it quickly and effectively.</p>
+</li>
+<li><p>Process Extensions<br>Software process development is much like software development, in artifacts, disciplines, and methods.<br>Steps: define needs, establish goals, define quality criteria. Next, characterize the current and target processes and establish a development strategy. Finally, define and validate the initial process and establish means for its enhancement.<br>It’s practically impossible to produce a usable process the first time you try.<br>The perceived process is what you think you do; the actual process is what you actually do; the official process is what management thinks you do; and the target process is the process to which you are evolving.<br>Process development should be planned, measured, tracked, and improved.</p>
+</li>
+</ol>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2012/10/personal-software-process/" data-id="cj3b6rqc70000hh6nlbvoe32c" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2012/10/personal-software-process/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/10/personal-software-process/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2012/10/smart-food-organization/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    Trick Yourself Into Eating More Productivity-Boosting Foods With Smart Food Organization
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2012/11/icebreaker-questions/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Icebreaker questions</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+</section>
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">recent</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/05/design-patterns-gang-of-four/" class="title">Design Patterns: Elements of Reusable Object Oriented Software</a></p>
+                            <p class="item-date"><time datetime="2017-05-07T23:18:35.000Z" itemprop="datePublished">2017-05-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/04/zero-to-one/" class="title">Zero to One - Peter Thiel</a></p>
+                            <p class="item-date"><time datetime="2017-04-01T23:18:35.000Z" itemprop="datePublished">2017-04-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/12/anki-essentials/" class="title">Anki Essentials: the Complete Guide to Remembering Anything with Anki</a></p>
+                            <p class="item-date"><time datetime="2016-12-19T00:18:35.000Z" itemprop="datePublished">2016-12-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/11/sicp/" class="title">Structure and Interpretation of Computer Programs (SICP) - Ableson &amp; Sussman</a></p>
+                            <p class="item-date"><time datetime="2016-11-21T06:50:56.000Z" itemprop="datePublished">2016-11-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/11/hackers-and-painters/" class="title">Hackers and Painters - Paul Graham</a></p>
+                            <p class="item-date"><time datetime="2016-11-19T06:50:56.000Z" itemprop="datePublished">2016-11-18</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">August 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/04/">April 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/03/">March 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/02/">February 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/01/">January 2013</a><span class="archive-list-count">8</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/12/">December 2012</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/11/">November 2012</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/10/">October 2012</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/book-review/" style="font-size: 20px;">book-review</a> <a href="/tags/career/" style="font-size: 17.5px;">career</a> <a href="/tags/quote/" style="font-size: 15px;">quote</a> <a href="/tags/quotes/" style="font-size: 12.5px;">quotes</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 yubinbai<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_config = function () {
+        
+            this.page.url = 'http://yubinbai.com/2012/10/personal-software-process/';
+        
+        this.page.identifier = 'personal-software-process';
+    };
+    (function() { 
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'coding-yubin' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
