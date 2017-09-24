@@ -55,7 +55,7 @@ ga('send', 'pageview');
     <div id="header-main" class="header-inner">
         <div class="outer">
             <a href="/" id="logo">
-                <i class="logo"></i>
+                
                 <span class="site-title">Coding Yubin</span>
             </a>
             <nav id="main-nav">
@@ -72,7 +72,7 @@ ga('send', 'pageview');
                 <nav id="sub-nav">
                     <div class="profile" id="profile-nav">
                         <a id="profile-anchor" href="javascript:;">
-                            <img class="avatar" src="https://www.gravatar.com/avatar/10f8548ab669a97dba805fb0da75e2ea" />
+                            <img class="avatar" src="/images/logo.png" />
                             <i class="fa fa-caret-down"></i>
                         </a>
                     </div>
@@ -112,10 +112,10 @@ ga('send', 'pageview');
 <aside id="profile">
     <div class="inner profile-inner">
         <div class="base-info profile-block">
-            <img id="avatar" src="https://www.gravatar.com/avatar/10f8548ab669a97dba805fb0da75e2ea?s=128" />
-            <h2 id="name">Yubin Bai</h2>
-            <h3 id="title">Developer</h3>
-            <span id="location"><i class="fa fa-map-marker"></i>SF bay area</span>
+            <img id="avatar" src="/images/logo.png" />
+            <h2 id="name">Coding Yubin</h2>
+            <h3 id="title"></h3>
+            <span id="location"><i class="fa fa-map-marker"></i>San Francisco Bay Area, US</span>
             <a id="follow" target="_blank" href="https://facebook.com/coding.yubin">FOLLOW</a>
         </div>
         <div class="article-info profile-block">
@@ -143,12 +143,6 @@ ga('send', 'pageview');
                     <td>
                         <a href="http://github.com/yubinbai" target="_blank" title="github" class=tooltip>
                             <i class="fa fa-github"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="https://www.linkedin.com/in/yubinbai/" target="_blank" title="linkedin" class=tooltip>
-                            <i class="fa fa-linkedin"></i>
                         </a>
                     </td>
                     
@@ -218,7 +212,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/06/learning-plateaus/" data-id="cj3m4llcw001ftabcp3z1tacm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/06/learning-plateaus/" data-id="cj7z0voh2001ktmqo07d4xztv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -287,6 +281,137 @@ ga('send', 'pageview');
             
     
         <a href="http://yubinbai.com/2013/06/learning-plateaus/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2013/06/learning-plateaus/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-difficult-doesnt-mean-bad" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2013/04/difficult-doesnt-mean-bad/">Difficult Does NOT Mean Bad</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2013/04/difficult-doesnt-mean-bad/">
+            <time datetime="2013-04-05T23:18:35.000Z" itemprop="datePublished">2013-04-05</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/quote/">quote</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <blockquote>
+<p>[Writing] is like wrestling; you are wrestling with ideas and with the story. There is a lot of energy required. At the same time, it is exciting. So it is both difficult and easy. </p>
+</blockquote>
+<p>What you must accept is that your life is not going to be the same while you are writing. I have said in the kind of exaggerated manner of writers and prophets that writing, for me, is like receiving a term of imprisonment — you know that’s what you’re in for, for whatever time it takes.” </p>
+<p>— Chinua Achebe, from The Paris Review</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/" data-id="cj7z0vogq000rtmqobks79q2f" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/">Comments</a>
     
 
         </footer>
@@ -377,7 +502,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/04/manage-your-energy/" data-id="cj3m4lld6001vtabc5oyxhvp8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/04/manage-your-energy/" data-id="cj7z0voh4001stmqor7pvgr13" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -455,137 +580,6 @@ ga('send', 'pageview');
 
 
 
-    <article id="post-difficult-doesnt-mean-bad" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2013/04/difficult-doesnt-mean-bad/">Difficult Does NOT Mean Bad</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2013/04/difficult-doesnt-mean-bad/">
-            <time datetime="2013-04-05T23:18:35.000Z" itemprop="datePublished">2013-04-05</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <blockquote>
-<p>[Writing] is like wrestling; you are wrestling with ideas and with the story. There is a lot of energy required. At the same time, it is exciting. So it is both difficult and easy. </p>
-</blockquote>
-<p>What you must accept is that your life is not going to be the same while you are writing. I have said in the kind of exaggerated manner of writers and prophets that writing, for me, is like receiving a term of imprisonment — you know that’s what you’re in for, for whatever time it takes.” </p>
-<p>— Chinua Achebe, from The Paris Review</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/" data-id="cj3m4llcc000itabc0h09j40a" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2013/04/difficult-doesnt-mean-bad/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
     <article id="post-being-realistic-to-mediocrity" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -637,7 +631,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/being-realistic-to-mediocrity/" data-id="cj3m4llc30006tabch7cp4fnv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/being-realistic-to-mediocrity/" data-id="cj7z0vogc0009tmqo6o7d4562" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -783,7 +777,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/take-things-away-until-you-cry/" data-id="cj3m4lldp0034tabcaaem6ns8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/take-things-away-until-you-cry/" data-id="cj7z0vohl0039tmqoa3vvkus7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -912,7 +906,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/in-praise-of-the-long-thought/" data-id="cj3m4llcu0019tabcf0gsmsxy" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/in-praise-of-the-long-thought/" data-id="cj7z0vogw0018tmqojbe4dzyh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1063,7 +1057,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/phone-interview-tips/" data-id="cj3m4lld90021tabc03m07bnl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/phone-interview-tips/" data-id="cj7z0voh90027tmqo8swsygrd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1194,7 +1188,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/withhold-answers-from-yourself/" data-id="cj3m4lle2003utabc4oojjxzg" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/withhold-answers-from-yourself/" data-id="cj7z0vohx003ztmqohy7shoj7" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1330,7 +1324,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/03/do-less-and-focus-hard/" data-id="cj3m4llce000ktabc96xayb12" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/03/do-less-and-focus-hard/" data-id="cj7z0vogr000ttmqokwhu1ime" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1458,7 +1452,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2013/02/stalking-interviewer/" data-id="cj3m4lldq0036tabc8w42fgb6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2013/02/stalking-interviewer/" data-id="cj7z0vohi0031tmqou602y4k3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1541,8 +1535,25 @@ ga('send', 'pageview');
     </nav>
 </section>
             
-                <aside id="sidebar">
+                
+<aside id="sidebar">
    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
         
     <div class="widget-wrap">
         <h3 class="widget-title">recent</h3>
@@ -1619,6 +1630,7 @@ ga('send', 'pageview');
     
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
+
             
         </div>
         <footer id="footer">
@@ -1646,6 +1658,7 @@ ga('send', 'pageview');
 
 
 
+
     
         <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
         <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
@@ -1659,6 +1672,7 @@ ga('send', 'pageview');
     
     
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
     
 
 
