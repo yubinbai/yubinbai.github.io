@@ -211,7 +211,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/use-the-dash-method/" data-id="cjqne89f8003eyiqov3e84hnj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/use-the-dash-method/" data-id="cjqpr9cbw003k80qoy5w88tny" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -279,7 +279,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/use-the-dash-method/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/use-the-dash-method/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/use-the-dash-method/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/use-the-dash-method/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -345,7 +345,7 @@ ga('send', 'pageview');
 <p>You may well not put the system into production at the end of each iteration, but the system should be of production quality.</p>
 <p>Most writers on software process in the past few years, especially in the object-oriented community, dislike the waterfall approach. Of the many reasons for this, the most fundamental is that it’s very difficult to tell whether the project is truly on track with a waterfall process.</p>
 <p>A common technique with iterations is to use time boxing. This forces an iteration to be a fixed length of time. A good rule of thumb is that the size of your unit test code should be about the same size as your production code.</p>
-<p>Agile is an umbrella term that covers many processes that share a common set of values and principles as defined by the Manifesto of Agile Software Development (<a href="http://agileManifesto.org" target="_blank" rel="external">http://agileManifesto.org</a>)</p>
+<p>Agile is an umbrella term that covers many processes that share a common set of values and principles as defined by the Manifesto of Agile Software Development (<a href="http://agileManifesto.org" target="_blank" rel="noopener">http://agileManifesto.org</a>)</p>
 <p>In terms of our discussion, agile processes are strongly adaptive in their nature. They are also very much people-oriented processes.</p>
 <p>Agile processes tend to be low in ceremony. A high-ceremony, or heavyweight, process has a lot of documents and control points during the project.</p>
 <p>Whether or not you use a waterfall approach, you still do the activities of analysis, design, coding, and testing.</p>
@@ -394,7 +394,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/" data-id="cjqne89fr003yyiqo3hr1jaqf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/" data-id="cjqpr9ccg003x80qotn83loj4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -462,7 +462,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/uml-distilled-martin-fowler/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -520,16 +520,16 @@ ga('send', 'pageview');
 </blockquote>
 <p>This is probably the single most important point in learning Java properly.<br>It’s amazing how far you can actually get without knowing it, in fact - but vast numbers of things suddenly make sense when you grasp it.</p>
 <h2 id="Why-is-all-this-important"><a href="#Why-is-all-this-important" class="headerlink" title="Why is all this important?"></a>Why is all this important?</h2><p>When people hear the words “pass by reference”, they may understand different things by the words. There are some pretty specific definitions of what it should mean, however. Dale King sometimes quotes this one: “The lvalue of the formal parameter is set to the lvalue of the actual parameter.” (Dale’s formal analysis of this whole question can be found at the bottom of this page.) This would mean that if you wrote the following code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Object x = null;</div><div class="line">giveMeAString(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeAString(Object y) &#123;</div><div class="line">  y = &quot;This is a string&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Object x = null;</span><br><span class="line">giveMeAString(x);</span><br><span class="line">System.out.println(x);</span><br><span class="line"></span><br><span class="line">void giveMeAString(Object y) &#123;</span><br><span class="line">  y = &quot;This is a string&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>the result (if Java used pass-by-reference semantics) would be</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This is a string</div></pre></td></tr></table></figure>
-<p>instead of the actual result:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">null</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This is a string</span><br></pre></td></tr></table></figure>
+<p>instead of the actual result:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">null</span><br></pre></td></tr></table></figure></p>
 <p>Explaining the two truths above eliminates all of this confusion.</p>
 <p>So what does passing a reference by value actually mean?</p>
 <blockquote>
 <p>It means you can think of references how you think of primitives, to a large extent. </p>
 </blockquote>
-<p>For instance, the equivalent to the above bit of code using primitives would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">int x = 0;</div><div class="line">giveMeATen(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeATen (int y) &#123;</div><div class="line">  y = 10;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>For instance, the equivalent to the above bit of code using primitives would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int x = 0;</span><br><span class="line">giveMeATen(x);</span><br><span class="line">System.out.println(x);</span><br><span class="line"></span><br><span class="line">void giveMeATen (int y) &#123;</span><br><span class="line">  y = 10;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="The-balloon-analogy"><a href="#The-balloon-analogy" class="headerlink" title="The balloon analogy"></a>The balloon analogy</h1><p>I imagine every object as a helium balloon, every reference as a piece of string, and every variable as something which can hold onto a piece of string. </p>
 <p>If the reference is a null reference, that’s like having a piece of string without anything attached to the end. If it’s a reference to a genuine object, it’s a piece of string tied onto the balloon representing that object. When a reference is copied (either for variable assignment or as part of a method call) it’s as if another piece of string is created attached to whatever the first piece of string is attached to. The actual piece of string the variable (if any) is holding onto doesn’t go anywhere - it’s only copied.</p>
 <p>This analogy also explains garbage collection (apart from the java.lang.ref API, which does “odd” things :) - a balloon floats away unless it is tethered down to something. The balloons can have further holders on them (instance variables), but just because two balloons are holding onto each other doesn’t stop them from floating away. (Cyclic references are collected.) Any balloon representing an object which is in the middle of having a method invoked is tethered to the JVM. (Apologies for not being able to phrase that more succinctly - all I mean is that anything in an active thread’s stack isn’t garbage collected.)</p>
@@ -543,7 +543,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-id="cjqne89el001vyiqoc1gour6s" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-id="cjqpr9cb1001s80qo0hrxqzrl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -611,7 +611,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/parameter-passing-in-java/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/parameter-passing-in-java/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/parameter-passing-in-java/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/parameter-passing-in-java/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -660,7 +660,7 @@ ga('send', 'pageview');
         
             
             <p>December 11th, 2012 by Steve Pavlina</p>
-<p><a href="http://www.stevepavlina.com/blog/2012/12/is-it-time-for-you-to-stop-dabbling-and-get-serious/" target="_blank" rel="external">http://www.stevepavlina.com/blog/2012/12/is-it-time-for-you-to-stop-dabbling-and-get-serious/</a></p>
+<p><a href="http://www.stevepavlina.com/blog/2012/12/is-it-time-for-you-to-stop-dabbling-and-get-serious/" target="_blank" rel="noopener">http://www.stevepavlina.com/blog/2012/12/is-it-time-for-you-to-stop-dabbling-and-get-serious/</a></p>
 <p> If you want to start on a serious career path, don’t even think about giving up during the first year. Very little happens during the first year in terms of results. Most businesses aren’t even profitable in their first 2 years; it takes them that long just to become sustainable, even for fairly small businesses.</p>
 <p> So many would-be pro bloggers give up in their first 6 months. They get bored, lose interest, or get a “better” idea for some other venture. I see them change topics or URLs and start over once or twice a year. After five years of this kind of dabbling, they’ve still barely gotten anywhere. They keep erasing what little progress they’ve made, so they never have the chance to develop anything serious and enduring.</p>
 <p> When it comes to building any sort of business, either online or offline, this dabbling approach is a bit ridiculous because the real payoff from business comes from consistency over a period of years. It takes time to build a following, attract customers, develop products and services, gain links and search engine placement, generate referrals, develop good business sense, acquire expertise, and figure out how to generate income from your work in ways that feel congruent to you.</p>
@@ -687,7 +687,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/stop-dabbling-get-serious/" data-id="cjqne89f20031yiqoma033ogf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/stop-dabbling-get-serious/" data-id="cjqpr9cbi002u80qomtg671mx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -755,7 +755,279 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/stop-dabbling-get-serious/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/stop-dabbling-get-serious/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/stop-dabbling-get-serious/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/stop-dabbling-get-serious/">0</span>&nbsp;Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-how-to-get-energy-boost" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2012/12/how-to-get-energy-boost/">How To Get an Energy Boost Without Caffeine</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2012/12/how-to-get-energy-boost/">
+            <time datetime="2012-12-11T00:18:35.000Z" itemprop="datePublished">2012-12-10</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/quote/">quote</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/images/how-to-get-energy-boost.jpg">
+<p>Between work, classes, and socializing, life can get pretty hectic. In response, we often rely on caffeinated drinks to keep us going. Sure, everyone knows that caffeine can give you a much-needed jolt, but at what cost? It can also cause headaches, breakouts, and mood swings, just to name a few negative side effects. The good news: there are better, healthier ways to get energy without all that caffeine clogging your system.</p>
+<h1 id="Have-a-Protein-Filled-Snack"><a href="#Have-a-Protein-Filled-Snack" class="headerlink" title="Have a Protein-Filled Snack"></a>Have a Protein-Filled Snack</h1><p>Feeling drowsy? Nosh on a protein-packed snack. This is a simple but effective way to keep yourself going throughout the day. Think crunchy apple slices with creamy peanut butter, turkey roll-ups with string cheese, or almonds and dried fruit. If you’re crunched for time, pick up a smoothie with a protein boost—most places offer free “boosts.” Jamba Juice has a great energy one that has B vitamins in it to help physical and mental stamina. Bonus: it helps your metabolism too!</p>
+<h1 id="Pop-a-B-Vitamin"><a href="#Pop-a-B-Vitamin" class="headerlink" title="Pop a B Vitamin"></a>Pop a B Vitamin</h1><p>Vitamin B deficiency has been linked to low energy levels, among other things. In fact, mood changes, poor concentration, anxiety, and depression can all be signs of a vitamin B deficiency. So if you’re feeling tired regularly, try popping a B-complex vitamin. Most grocers and health food stores carry a variety of brands that you can choose from. Another option is to take a multivitamin, which will help ensure that you’re not deficient in other minerals or nutrients. For the best results, take your multivitamin during a meal—preferably breakfast. According to NutriHealth, the nutrients are better absorbed when mixed with the healthy fat in your food.</p>
+<h1 id="Try-a-Quick-Workout"><a href="#Try-a-Quick-Workout" class="headerlink" title="Try a Quick Workout"></a>Try a Quick Workout</h1><p>When you’re tired, hitting the gym is the last thing you want to do. But studies show that a short sweat session can kick up your energy levels for the rest of the day. According to Fitness Magazine, you don’t need to pound the treadmill for an hour—a quick jog around the block will do. Feeling unmotivated? Pop in some headphones, cue up your favorite upbeat tunes, and hit the pavement! If you want to stay in your room, a quick set of 25 jumping jacks can help give you a boost.</p>
+<h1 id="Take-A-Cold-Shower"><a href="#Take-A-Cold-Shower" class="headerlink" title="Take A Cold Shower"></a>Take A Cold Shower</h1><p>Hot showers are the best for relaxing and winding down. But if your goal is to do the opposite, consider changing the temperature. Cold water stimulates your system and speeds up circulation, resulting in a more alert you. Don’t want to give up the soothing heat completely? Try taking a regular shower, then cooling it down for the last 5 minutes or so. It’ll still do wonders for your mental awareness. Really not into the cold shower thing? Splash cold water on your face for a midday refresher.</p>
+<h1 id="Eat-Smaller-More-Frequent-Meals"><a href="#Eat-Smaller-More-Frequent-Meals" class="headerlink" title="Eat Smaller, More Frequent Meals"></a>Eat Smaller, More Frequent Meals</h1><p>According to Terri Fant-Franklin, a nutritionist at Kaiser Permanente, changing your eating habits can greatly increase your energy levels. “Having smaller, more frequent meals will keep your calorie flow at a more even pace which helps with energy,” Fant-Franklin says. Heavy meals often leave us feeling drowsy, while smaller portions can have the opposite effect. Try to avoid sugary drinks, which are often loaded with caffeine and additives. Chances are, you’ll end up crashing later.</p>
+<h1 id="Go-To-Sleep-20-Minutes-Earlier"><a href="#Go-To-Sleep-20-Minutes-Earlier" class="headerlink" title="Go To Sleep 20 Minutes Earlier"></a>Go To Sleep 20 Minutes Earlier</h1><p>It’s easy to procrastinate during the day and put off projects until the wee hours of the night. But this pushes your bedtime back later and later. Before you know it, you wake up on four hours’ worth of sleep, tired and cranky. Let’s just say that this situation is less than ideal. But there’s a simple and effective way to change your habits. Instead of being unrealistic and wishing you could sleep through that 7AM alarm, take action the night before. Aim to hit the sack 20-30 minutes earlier and chances are, you’ll end up getting significantly more sleep.</p>
+<h1 id="Take-a-Walk"><a href="#Take-a-Walk" class="headerlink" title="Take a Walk"></a>Take a Walk</h1><p>Taking a brisk stroll has similar effects to working out. According to WebMD, moving your body (even at a slow pace) will have you feeling more alert in just minutes. Since the weather has cooled down, the chilly winter air will also help wake up your senses. Worried you’ll get bored? Grab your camera and snap photos of the beautiful fall foliage you see along the way. You can also incorporate this tip into your daily routine by walking instead of taking the bus or driving. Bonus: a leisurely walk is great for clearing up brain fog, which can result from hours spent at a desk or too much computer time. So next time you need a break from doing work or studying, head outside.</p>
+<h1 id="Get-A-Reflexology-Massage"><a href="#Get-A-Reflexology-Massage" class="headerlink" title="Get A (Reflexology) Massage"></a>Get A (Reflexology) Massage</h1><p>In the practice of reflexology, your hands and feet are filled with pressure points that relate to specific areas of the body. For example, the top part of your thumbs correlates with your pituitary gland. Massages generally leave you feeling refreshed and rejuvenated, but reflexology takes things one step further and pinpoints specific areas that need work. According to The American Reflexology Certification Board, the practice helps restore balance to the body. Try making an appointment with a specialist or give yourself a quick massage (or recruit a friend to) for a DIY midday pick-me-up. Apply pressure to the different areas on your hands and feet, alternating to stimulate multiple organs. It’ll double as a mental break, preparing you for the rest of your busy day!</p>
+<h1 id="Talk-It-Out"><a href="#Talk-It-Out" class="headerlink" title="Talk It Out"></a>Talk It Out</h1><p>Next time you’re feeling down and tired, try talking to a friend. Studies show that chatting can help make you feel more alert. Being socially disconnected can trickle into other areas of your life, resulting in negative thoughts and lower levels of productivity. Catching up on gossip will pique your interest and keep you going. Friends too busy to talk? Calling someone works too. Dial your mom’s cell and catch up on the latest family news.</p>
+<h1 id="Meditate"><a href="#Meditate" class="headerlink" title="Meditate"></a>Meditate</h1><p>The mind is a powerful tool. It’s been proven that visualization exercises can help bring you closer to achieving your goals. A recent Miller-McCune article discusses the many benefits of meditation. Next time you’re feeling zapped for energy, try this simple exercise: sit on a chair with your back straight and your hands on your knees. Close your eyes and envision yourself feeling positive and energized. Take deep breaths and keep your posture strong. Before long, you’ll have an increased sense of mental and physical awareness.</p>
+<p>10 Ways To Get Energy Without Caffeine | Her Campus</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2012/12/how-to-get-energy-boost/" data-id="cjqpr9caj000z80qonkpnvpck" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2012/12/how-to-get-energy-boost/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/how-to-get-energy-boost/">0</span>&nbsp;Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-practice-mindful-eating" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2012/12/practice-mindful-eating/">Practice Mindful Eating to Remember What You Ate and Avoid Overeating Later</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2012/12/practice-mindful-eating/">
+            <time datetime="2012-12-11T00:18:35.000Z" itemprop="datePublished">2012-12-10</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/quote/">quote</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h1 id="Memory-is-key"><a href="#Memory-is-key" class="headerlink" title="Memory is key"></a>Memory is key</h1><p>According to a new study, how hungry you are may be less influenced by how much you ate earlier but rather by <em>how much you remember eating</em>. To keep yourself from eating too often and too much, consider the practice of mindful eating—paying more attention while eating.</p>
+<p>In the study published in the PLOS ONE journal, University of Bristol gave 100 volunteers lunch with either a small or large portion of tomato soup as an appetizer. The bowls had a secret tube that refilled or drained the soup without the participants knowing, so half of them ended up eating more or less than what their eyes told them they were eating. Predictably, right after the meal, the participants’ hunger levels were tied to how much of the soup they actually ate. But two to three hours later, how much they thought they had eaten mattered more: Those who believed they had a larger portion (regardless of actually eating that much or not) said they felt less hungry for another meal than the group who thought they had the smaller portion. According to the researchers, memory can have a bigger influence on appetite than the actual meal size.</p>
+<p>How to apply this to real life? Time suggests focusing on our food more and avoiding distractions while eating:</p>
+<blockquote>
+<p>“Take three seconds to look closely at what you are eating,” she says. “Think for a moment about the words that spring to mind: small, large, filling, etc.,” [clinical psychologist Susan Albers] says. “Taking a moment to consciously and thoughtfully encode this meal into your memory will make it more likely that you will remember what you’ve eaten later.”</p>
+</blockquote>
+<p>Keeping your eyes on your food is also important to prevent eating too much in one sitting. The New York Times has a great article on mindful eating if you’re interested in putting this into practice yourself.</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yubinbai.com/2012/12/practice-mindful-eating/" data-id="cjqpr9cb8002680qolqnuixib" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yubinbai.com/2012/12/practice-mindful-eating/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/practice-mindful-eating/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -818,7 +1090,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/" data-id="cjqne89eb0018yiqoxht8ihy0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/" data-id="cjqpr9cat001h80qow3vue3af" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -886,7 +1158,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/inspiration-is-like-food-poisoning/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -959,7 +1231,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/power-through-demanding-task/" data-id="cjqne89eo0023yiqot41gnimc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/power-through-demanding-task/" data-id="cjqpr9cb6002280qodjw4vkrx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1027,279 +1299,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/power-through-demanding-task/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/power-through-demanding-task/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-practice-mindful-eating" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2012/12/practice-mindful-eating/">Practice Mindful Eating to Remember What You Ate and Avoid Overeating Later</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2012/12/practice-mindful-eating/">
-            <time datetime="2012-12-11T00:18:35.000Z" itemprop="datePublished">2012-12-10</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="Memory-is-key"><a href="#Memory-is-key" class="headerlink" title="Memory is key"></a>Memory is key</h1><p>According to a new study, how hungry you are may be less influenced by how much you ate earlier but rather by <em>how much you remember eating</em>. To keep yourself from eating too often and too much, consider the practice of mindful eating—paying more attention while eating.</p>
-<p>In the study published in the PLOS ONE journal, University of Bristol gave 100 volunteers lunch with either a small or large portion of tomato soup as an appetizer. The bowls had a secret tube that refilled or drained the soup without the participants knowing, so half of them ended up eating more or less than what their eyes told them they were eating. Predictably, right after the meal, the participants’ hunger levels were tied to how much of the soup they actually ate. But two to three hours later, how much they thought they had eaten mattered more: Those who believed they had a larger portion (regardless of actually eating that much or not) said they felt less hungry for another meal than the group who thought they had the smaller portion. According to the researchers, memory can have a bigger influence on appetite than the actual meal size.</p>
-<p>How to apply this to real life? Time suggests focusing on our food more and avoiding distractions while eating:</p>
-<blockquote>
-<p>“Take three seconds to look closely at what you are eating,” she says. “Think for a moment about the words that spring to mind: small, large, filling, etc.,” [clinical psychologist Susan Albers] says. “Taking a moment to consciously and thoughtfully encode this meal into your memory will make it more likely that you will remember what you’ve eaten later.”</p>
-</blockquote>
-<p>Keeping your eyes on your food is also important to prevent eating too much in one sitting. The New York Times has a great article on mindful eating if you’re interested in putting this into practice yourself.</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yubinbai.com/2012/12/practice-mindful-eating/" data-id="cjqne89ep0027yiqoxj5vf3oe" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://yubinbai.com/2012/12/practice-mindful-eating/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/practice-mindful-eating/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
-
-    <article id="post-how-to-get-energy-boost" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2012/12/how-to-get-energy-boost/">How To Get an Energy Boost Without Caffeine</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2012/12/how-to-get-energy-boost/">
-            <time datetime="2012-12-11T00:18:35.000Z" itemprop="datePublished">2012-12-10</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/quote/">quote</a>
-    </div>
-
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <img src="/images/how-to-get-energy-boost.jpg">
-<p>Between work, classes, and socializing, life can get pretty hectic. In response, we often rely on caffeinated drinks to keep us going. Sure, everyone knows that caffeine can give you a much-needed jolt, but at what cost? It can also cause headaches, breakouts, and mood swings, just to name a few negative side effects. The good news: there are better, healthier ways to get energy without all that caffeine clogging your system.</p>
-<h1 id="Have-a-Protein-Filled-Snack"><a href="#Have-a-Protein-Filled-Snack" class="headerlink" title="Have a Protein-Filled Snack"></a>Have a Protein-Filled Snack</h1><p>Feeling drowsy? Nosh on a protein-packed snack. This is a simple but effective way to keep yourself going throughout the day. Think crunchy apple slices with creamy peanut butter, turkey roll-ups with string cheese, or almonds and dried fruit. If you’re crunched for time, pick up a smoothie with a protein boost—most places offer free “boosts.” Jamba Juice has a great energy one that has B vitamins in it to help physical and mental stamina. Bonus: it helps your metabolism too!</p>
-<h1 id="Pop-a-B-Vitamin"><a href="#Pop-a-B-Vitamin" class="headerlink" title="Pop a B Vitamin"></a>Pop a B Vitamin</h1><p>Vitamin B deficiency has been linked to low energy levels, among other things. In fact, mood changes, poor concentration, anxiety, and depression can all be signs of a vitamin B deficiency. So if you’re feeling tired regularly, try popping a B-complex vitamin. Most grocers and health food stores carry a variety of brands that you can choose from. Another option is to take a multivitamin, which will help ensure that you’re not deficient in other minerals or nutrients. For the best results, take your multivitamin during a meal—preferably breakfast. According to NutriHealth, the nutrients are better absorbed when mixed with the healthy fat in your food.</p>
-<h1 id="Try-a-Quick-Workout"><a href="#Try-a-Quick-Workout" class="headerlink" title="Try a Quick Workout"></a>Try a Quick Workout</h1><p>When you’re tired, hitting the gym is the last thing you want to do. But studies show that a short sweat session can kick up your energy levels for the rest of the day. According to Fitness Magazine, you don’t need to pound the treadmill for an hour—a quick jog around the block will do. Feeling unmotivated? Pop in some headphones, cue up your favorite upbeat tunes, and hit the pavement! If you want to stay in your room, a quick set of 25 jumping jacks can help give you a boost.</p>
-<h1 id="Take-A-Cold-Shower"><a href="#Take-A-Cold-Shower" class="headerlink" title="Take A Cold Shower"></a>Take A Cold Shower</h1><p>Hot showers are the best for relaxing and winding down. But if your goal is to do the opposite, consider changing the temperature. Cold water stimulates your system and speeds up circulation, resulting in a more alert you. Don’t want to give up the soothing heat completely? Try taking a regular shower, then cooling it down for the last 5 minutes or so. It’ll still do wonders for your mental awareness. Really not into the cold shower thing? Splash cold water on your face for a midday refresher.</p>
-<h1 id="Eat-Smaller-More-Frequent-Meals"><a href="#Eat-Smaller-More-Frequent-Meals" class="headerlink" title="Eat Smaller, More Frequent Meals"></a>Eat Smaller, More Frequent Meals</h1><p>According to Terri Fant-Franklin, a nutritionist at Kaiser Permanente, changing your eating habits can greatly increase your energy levels. “Having smaller, more frequent meals will keep your calorie flow at a more even pace which helps with energy,” Fant-Franklin says. Heavy meals often leave us feeling drowsy, while smaller portions can have the opposite effect. Try to avoid sugary drinks, which are often loaded with caffeine and additives. Chances are, you’ll end up crashing later.</p>
-<h1 id="Go-To-Sleep-20-Minutes-Earlier"><a href="#Go-To-Sleep-20-Minutes-Earlier" class="headerlink" title="Go To Sleep 20 Minutes Earlier"></a>Go To Sleep 20 Minutes Earlier</h1><p>It’s easy to procrastinate during the day and put off projects until the wee hours of the night. But this pushes your bedtime back later and later. Before you know it, you wake up on four hours’ worth of sleep, tired and cranky. Let’s just say that this situation is less than ideal. But there’s a simple and effective way to change your habits. Instead of being unrealistic and wishing you could sleep through that 7AM alarm, take action the night before. Aim to hit the sack 20-30 minutes earlier and chances are, you’ll end up getting significantly more sleep.</p>
-<h1 id="Take-a-Walk"><a href="#Take-a-Walk" class="headerlink" title="Take a Walk"></a>Take a Walk</h1><p>Taking a brisk stroll has similar effects to working out. According to WebMD, moving your body (even at a slow pace) will have you feeling more alert in just minutes. Since the weather has cooled down, the chilly winter air will also help wake up your senses. Worried you’ll get bored? Grab your camera and snap photos of the beautiful fall foliage you see along the way. You can also incorporate this tip into your daily routine by walking instead of taking the bus or driving. Bonus: a leisurely walk is great for clearing up brain fog, which can result from hours spent at a desk or too much computer time. So next time you need a break from doing work or studying, head outside.</p>
-<h1 id="Get-A-Reflexology-Massage"><a href="#Get-A-Reflexology-Massage" class="headerlink" title="Get A (Reflexology) Massage"></a>Get A (Reflexology) Massage</h1><p>In the practice of reflexology, your hands and feet are filled with pressure points that relate to specific areas of the body. For example, the top part of your thumbs correlates with your pituitary gland. Massages generally leave you feeling refreshed and rejuvenated, but reflexology takes things one step further and pinpoints specific areas that need work. According to The American Reflexology Certification Board, the practice helps restore balance to the body. Try making an appointment with a specialist or give yourself a quick massage (or recruit a friend to) for a DIY midday pick-me-up. Apply pressure to the different areas on your hands and feet, alternating to stimulate multiple organs. It’ll double as a mental break, preparing you for the rest of your busy day!</p>
-<h1 id="Talk-It-Out"><a href="#Talk-It-Out" class="headerlink" title="Talk It Out"></a>Talk It Out</h1><p>Next time you’re feeling down and tired, try talking to a friend. Studies show that chatting can help make you feel more alert. Being socially disconnected can trickle into other areas of your life, resulting in negative thoughts and lower levels of productivity. Catching up on gossip will pique your interest and keep you going. Friends too busy to talk? Calling someone works too. Dial your mom’s cell and catch up on the latest family news.</p>
-<h1 id="Meditate"><a href="#Meditate" class="headerlink" title="Meditate"></a>Meditate</h1><p>The mind is a powerful tool. It’s been proven that visualization exercises can help bring you closer to achieving your goals. A recent Miller-McCune article discusses the many benefits of meditation. Next time you’re feeling zapped for energy, try this simple exercise: sit on a chair with your back straight and your hands on your knees. Close your eyes and envision yourself feeling positive and energized. Take deep breaths and keep your posture strong. Before long, you’ll have an increased sense of mental and physical awareness.</p>
-<p>10 Ways To Get Energy Without Caffeine | Her Campus</p>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://yubinbai.com/2012/12/how-to-get-energy-boost/" data-id="cjqne89e90012yiqob06tt554" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://yubinbai.com/2012/12/how-to-get-energy-boost/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/how-to-get-energy-boost/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/power-through-demanding-task/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/power-through-demanding-task/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -1376,7 +1376,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/life-is-like-compound-interest/" data-id="cjqne89fp003tyiqofak366fe" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/life-is-like-compound-interest/" data-id="cjqpr9ccf003t80qonwivtzss" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1444,7 +1444,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/life-is-like-compound-interest/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/life-is-like-compound-interest/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/life-is-like-compound-interest/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/life-is-like-compound-interest/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -1837,7 +1837,7 @@ ga('send', 'pageview');
 <li>Would you rather lead or follow Why</li>
 <li>What is your favorite winter activity</li>
 <li>What is something you can do better than anyone else you know</li>
-<li>I wish everyone would<strong><strong><strong><em>__</em></strong></strong></strong>.</li>
+<li>I wish everyone would________________.</li>
 <li>What’s your favorite song to sing in Karaoke Why</li>
 <li>If you had to be handcuffed to one person for an entire month, who would it be</li>
 <li>If you could have a child with any famous person alive, who would it be What would you name him/her</li>
@@ -2048,7 +2048,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/11/icebreaker-questions/" data-id="cjqne89gq0044yiqobnbcudhb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/11/icebreaker-questions/" data-id="cjqpr9cdm004280qo65l4wliw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -2116,7 +2116,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/11/icebreaker-questions/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/11/icebreaker-questions/">Comments</a>
+        <a href="http://yubinbai.com/2012/11/icebreaker-questions/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/11/icebreaker-questions/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -2223,18 +2223,14 @@ ga('send', 'pageview');
 </footer>
         
     
-    <script>
-    var disqus_config = function () {
-        
-        this.page.identifier = 'undefined';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'coding-yubin' + '.disqus.com/count.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 
 

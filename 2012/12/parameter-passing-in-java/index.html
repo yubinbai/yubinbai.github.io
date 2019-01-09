@@ -208,16 +208,16 @@ ga('send', 'pageview');
 </blockquote>
 <p>This is probably the single most important point in learning Java properly.<br>It’s amazing how far you can actually get without knowing it, in fact - but vast numbers of things suddenly make sense when you grasp it.</p>
 <h2 id="Why-is-all-this-important"><a href="#Why-is-all-this-important" class="headerlink" title="Why is all this important?"></a>Why is all this important?</h2><p>When people hear the words “pass by reference”, they may understand different things by the words. There are some pretty specific definitions of what it should mean, however. Dale King sometimes quotes this one: “The lvalue of the formal parameter is set to the lvalue of the actual parameter.” (Dale’s formal analysis of this whole question can be found at the bottom of this page.) This would mean that if you wrote the following code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Object x = null;</div><div class="line">giveMeAString(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeAString(Object y) &#123;</div><div class="line">  y = &quot;This is a string&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Object x = null;</span><br><span class="line">giveMeAString(x);</span><br><span class="line">System.out.println(x);</span><br><span class="line"></span><br><span class="line">void giveMeAString(Object y) &#123;</span><br><span class="line">  y = &quot;This is a string&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>the result (if Java used pass-by-reference semantics) would be</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This is a string</div></pre></td></tr></table></figure>
-<p>instead of the actual result:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">null</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This is a string</span><br></pre></td></tr></table></figure>
+<p>instead of the actual result:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">null</span><br></pre></td></tr></table></figure></p>
 <p>Explaining the two truths above eliminates all of this confusion.</p>
 <p>So what does passing a reference by value actually mean?</p>
 <blockquote>
 <p>It means you can think of references how you think of primitives, to a large extent. </p>
 </blockquote>
-<p>For instance, the equivalent to the above bit of code using primitives would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">int x = 0;</div><div class="line">giveMeATen(x);</div><div class="line">System.out.println(x);</div><div class="line"></div><div class="line">void giveMeATen (int y) &#123;</div><div class="line">  y = 10;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>For instance, the equivalent to the above bit of code using primitives would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int x = 0;</span><br><span class="line">giveMeATen(x);</span><br><span class="line">System.out.println(x);</span><br><span class="line"></span><br><span class="line">void giveMeATen (int y) &#123;</span><br><span class="line">  y = 10;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="The-balloon-analogy"><a href="#The-balloon-analogy" class="headerlink" title="The balloon analogy"></a>The balloon analogy</h1><p>I imagine every object as a helium balloon, every reference as a piece of string, and every variable as something which can hold onto a piece of string. </p>
 <p>If the reference is a null reference, that’s like having a piece of string without anything attached to the end. If it’s a reference to a genuine object, it’s a piece of string tied onto the balloon representing that object. When a reference is copied (either for variable assignment or as part of a method call) it’s as if another piece of string is created attached to whatever the first piece of string is attached to. The actual piece of string the variable (if any) is holding onto doesn’t go anywhere - it’s only copied.</p>
 <p>This analogy also explains garbage collection (apart from the java.lang.ref API, which does “odd” things :) - a balloon floats away unless it is tethered down to something. The balloons can have further holders on them (instance variables), but just because two balloons are holding onto each other doesn’t stop them from floating away. (Cyclic references are collected.) Any balloon representing an object which is in the middle of having a method invoked is tethered to the JVM. (Apologies for not being able to phrase that more succinctly - all I mean is that anything in an active thread’s stack isn’t garbage collected.)</p>
@@ -231,7 +231,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-id="cjqne89el001vyiqoc1gour6s" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-id="cjqpr9cb1001s80qo0hrxqzrl" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -299,7 +299,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2012/12/parameter-passing-in-java/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2012/12/parameter-passing-in-java/">Comments</a>
+        <a href="http://yubinbai.com/2012/12/parameter-passing-in-java/#comments" class="article-comment-link"><span class="fb-comments-count" data-href="http://yubinbai.com/2012/12/parameter-passing-in-java/">0</span>&nbsp;Comments</a>
     
 
         </footer>
@@ -333,9 +333,8 @@ ga('send', 'pageview');
     
     
         <section id="comments">
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+    <div class="fb-comments" data-width="100%" data-href="http://yubinbai.com/2012/12/parameter-passing-in-java/" data-num-posts="5"></div>
+
 </section>
     
 
@@ -433,20 +432,14 @@ ga('send', 'pageview');
 </footer>
         
     
-    <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'http://yubinbai.com/2012/12/parameter-passing-in-java/';
-        
-        this.page.identifier = 'parameter-passing-in-java';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'coding-yubin' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 
 
