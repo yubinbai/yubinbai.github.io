@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang=en>
-<head>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
     <title>Software engineers beware: the XY problem | Coding Yubin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words,">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words, a">
 <meta name="keywords" content="post">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Software engineers beware: the XY problem">
 <meta property="og:url" content="http://yubinbai.com/2019/01/the-xy-problem/index.html">
 <meta property="og:site_name" content="Coding Yubin">
-<meta property="og:description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words,">
+<meta property="og:description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words, a">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="http://yubinbai.com/images/blurred-code.jpg">
-<meta property="og:updated_time" content="2019-01-07T20:26:03.093Z">
+<meta property="og:updated_time" content="2019-01-09T21:34:06.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Software engineers beware: the XY problem">
-<meta name="twitter:description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words,">
+<meta name="twitter:description" content="What is the XY problem?Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.In other words, a">
 <meta name="twitter:image" content="http://yubinbai.com/images/blurred-code.jpg">
     
 
@@ -55,7 +56,7 @@ ga('send', 'pageview');
 
 
 </head>
-
+</html>
 <body>
     <div id="container">
         <header id="header">
@@ -79,7 +80,7 @@ ga('send', 'pageview');
                 <nav id="sub-nav">
                     <div class="profile" id="profile-nav">
                         <a id="profile-anchor" href="javascript:;">
-                            <img class="avatar" src="/images/logo.png" />
+                            <img class="avatar" src="/images/logo.png">
                             <i class="fa fa-caret-down"></i>
                         </a>
                     </div>
@@ -119,7 +120,7 @@ ga('send', 'pageview');
 <aside id="profile">
     <div class="inner profile-inner">
         <div class="base-info profile-block">
-            <img id="avatar" src="/images/logo.png" />
+            <img id="avatar" src="/images/logo.png">
             <h2 id="name">Coding Yubin</h2>
             <h3 id="title"></h3>
             <span id="location"><i class="fa fa-map-marker"></i>San Francisco Bay Area, US</span>
@@ -142,13 +143,13 @@ ga('send', 'pageview');
                     
                     
                     <td>
-                        <a href="https://facebook.com/coding.yubin" target="_blank" title="facebook" class=tooltip>
+                        <a href="https://facebook.com/coding.yubin" target="_blank" title="facebook" class="tooltip">
                             <i class="fa fa-facebook"></i>
                         </a>
                     </td>
                     
                     <td>
-                        <a href="http://github.com/yubinbai" target="_blank" title="github" class=tooltip>
+                        <a href="http://github.com/yubinbai" target="_blank" title="github" class="tooltip">
                             <i class="fa fa-github"></i>
                         </a>
                     </td>
@@ -161,8 +162,16 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-the-xy-problem" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-the-xy-problem" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
+        
+            
+	
+		<img src="/images/blurred-code.jpg" class="article-banner">
+	
+
+
+
         
         
             <header class="article-header">
@@ -199,9 +208,8 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <img src="/images/blurred-code.jpg">
-<h2 id="What-is-the-XY-problem"><a href="#What-is-the-XY-problem" class="headerlink" title="What is the XY problem?"></a>What is the XY problem?</h2><p>Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.<br>In other words, asking about the attempted solution to a distorted problem, rather than the original:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;n00b&gt; How can I echo the last three characters in a filename?</div><div class="line">&lt;feline&gt; If they&apos;re in a variable: echo $&#123;foo: -3&#125;</div><div class="line">&lt;feline&gt; Why 3 characters? What do you REALLY want?</div><div class="line">&lt;feline&gt; Do you want the extension?</div><div class="line">&lt;n00b&gt; Yes.</div><div class="line">&lt;feline&gt; Then ASK FOR WHAT YOU WANT!</div><div class="line">&lt;feline&gt; There&apos;s no guarantee that every filename will have a three-letter extension,</div><div class="line">&lt;feline&gt; so blindly grabbing three characters does not solve the problem.</div><div class="line">&lt;feline&gt; echo $&#123;foo##*.&#125;</div></pre></td></tr></table></figure>
+            <h2 id="What-is-the-XY-problem"><a href="#What-is-the-XY-problem" class="headerlink" title="What is the XY problem?"></a>What is the XY problem?</h2><p>Someone is trying to solve problem X, and thinks solution Y would work; but instead of asking about X,  the implementation details of solution Y is asked about.<br>In other words, asking about the attempted solution to a distorted problem, rather than the original:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;n00b&gt; How can I echo the last three characters in a filename?</span><br><span class="line">&lt;feline&gt; If they&apos;re in a variable: echo $&#123;foo: -3&#125;</span><br><span class="line">&lt;feline&gt; Why 3 characters? What do you REALLY want?</span><br><span class="line">&lt;feline&gt; Do you want the extension?</span><br><span class="line">&lt;n00b&gt; Yes.</span><br><span class="line">&lt;feline&gt; Then ASK FOR WHAT YOU WANT!</span><br><span class="line">&lt;feline&gt; There&apos;s no guarantee that every filename will have a three-letter extension,</span><br><span class="line">&lt;feline&gt; so blindly grabbing three characters does not solve the problem.</span><br><span class="line">&lt;feline&gt; echo $&#123;foo##*.&#125;</span><br></pre></td></tr></table></figure>
 <p>The worst part of the X-Y Problem is wasting others a ton of time and energy in a fundamentally wrong direction. </p>
 <h2 id="How-to-recognize-when-falling-into-it"><a href="#How-to-recognize-when-falling-into-it" class="headerlink" title="How to recognize when falling into it"></a>How to recognize when falling into it</h2><ul>
 <li>User wants to do X.</li>
@@ -217,7 +225,7 @@ ga('send', 'pageview');
 <li>Go over other solutions you have tried, or ruled out.</li>
 <li>If none of above worked, smile and get over the sunk cost.</li>
 </ol>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://en.wikipedia.org/wiki/XY_problem" target="_blank" rel="external">Wikipedia: XY problem</a><br><a href="https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem" target="_blank" rel="external">Stack exchange</a><br><a href="http://xyproblem.info/" target="_blank" rel="external">xyproblem.info</a><br><a href="https://artyom.me/yx" target="_blank" rel="external">The YX problem</a><br><a href="https://medium.com/swlh/90-of-the-battle-is-won-when-we-solve-the-xy-problem-in-product-management-5a7aef1fa4fa" target="_blank" rel="external">The XY Problem in Product Management</a></p>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p><a href="https://en.wikipedia.org/wiki/XY_problem" target="_blank" rel="noopener">Wikipedia: XY problem</a><br><a href="https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem" target="_blank" rel="noopener">Stack exchange</a><br><a href="http://xyproblem.info/" target="_blank" rel="noopener">xyproblem.info</a><br><a href="https://artyom.me/yx" target="_blank" rel="noopener">The YX problem</a><br><a href="https://medium.com/swlh/90-of-the-battle-is-won-when-we-solve-the-xy-problem-in-product-management-5a7aef1fa4fa" target="_blank" rel="noopener">The XY Problem in Product Management</a></p>
 
         
         </div>
@@ -228,7 +236,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2019/01/the-xy-problem/" data-id="cjqndqp1g0030nmqohslinhsv" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2019/01/the-xy-problem/" data-id="cjqne89f40037yiqoeqpswbjr" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -305,15 +313,11 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/05/head-first-design-patterns/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    Head First Design Patterns
-                
-            </div>
-        </a>
     
+        <a href="/2017/05/head-first-design-patterns/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Older</strong>
+            <div class="article-nav-title">Head First Design Patterns</div>
+        </a>
     
 </nav>
 
