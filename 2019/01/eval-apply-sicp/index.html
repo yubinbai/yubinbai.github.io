@@ -3,22 +3,21 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     
-    <title>Head First Design Patterns | Coding Yubin</title>
+    <title>The evaluator, which determines the meaning of expressions in a language, is just another program. | Coding Yubin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Overall‘Head first’ series is designed for intuition. This one is especially useful in that it tries to pick the most frequently used patterns, and explain those in a fun way. Not only that, it also e">
-<meta name="keywords" content="book-review">
+    <meta name="description" content="Excerpts From: “Structure and Interpretation of Computer Programs.” (SICP)  To evaluate a combination (a compound expression other than a special form), evaluate the subexpressions and then apply the">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Head First Design Patterns">
-<meta property="og:url" content="http://yubinbai.com/2017/05/head-first-design-patterns/index.html">
+<meta property="og:title" content="The evaluator, which determines the meaning of expressions in a language, is just another program.">
+<meta property="og:url" content="http://yubinbai.com/2019/01/eval-apply-sicp/index.html">
 <meta property="og:site_name" content="Coding Yubin">
-<meta property="og:description" content="Overall‘Head first’ series is designed for intuition. This one is especially useful in that it tries to pick the most frequently used patterns, and explain those in a fun way. Not only that, it also e">
+<meta property="og:description" content="Excerpts From: “Structure and Interpretation of Computer Programs.” (SICP)  To evaluate a combination (a compound expression other than a special form), evaluate the subexpressions and then apply the">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yubinbai.com/images/head-first-design-patterns.jpg">
-<meta property="og:updated_time" content="2019-01-09T23:00:44.387Z">
+<meta property="og:image" content="http://yubinbai.com/images/eval-apply-sicp.jpg">
+<meta property="og:updated_time" content="2019-01-14T02:46:35.806Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Head First Design Patterns">
-<meta name="twitter:description" content="Overall‘Head first’ series is designed for intuition. This one is especially useful in that it tries to pick the most frequently used patterns, and explain those in a fun way. Not only that, it also e">
-<meta name="twitter:image" content="http://yubinbai.com/images/head-first-design-patterns.jpg">
+<meta name="twitter:title" content="The evaluator, which determines the meaning of expressions in a language, is just another program.">
+<meta name="twitter:description" content="Excerpts From: “Structure and Interpretation of Computer Programs.” (SICP)  To evaluate a combination (a compound expression other than a special form), evaluate the subexpressions and then apply the">
+<meta name="twitter:image" content="http://yubinbai.com/images/eval-apply-sicp.jpg">
     
 
     
@@ -162,23 +161,15 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-head-first-design-patterns" class="article article-type-post" itemscope="" itemprop="blogPost">
+            <section id="main"><article id="post-eval-apply-sicp" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
-        
-            
-	
-		<img src="/images/head-first-design-patterns.jpg" class="article-banner">
-	
-
-
-
         
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-            Head First Design Patterns
+            The evaluator, which determines the meaning of expressions in a language, is just another program.
         </h1>
     
 
@@ -187,19 +178,14 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2017/05/head-first-design-patterns/">
-            <time datetime="2017-06-01T06:50:56.000Z" itemprop="datePublished">2017-05-31</time>
+        <a href="/2019/01/eval-apply-sicp/">
+            <time datetime="2019-01-14T02:35:59.000Z" itemprop="datePublished">2019-01-13</time>
         </a>
     </div>
 
 
                         
                         
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/book-review/">book-review</a>
-    </div>
-
                     </div>
                 
             </header>
@@ -208,14 +194,15 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="Overall"><a href="#Overall" class="headerlink" title="Overall"></a>Overall</h2><p>‘Head first’ series is designed for intuition. This one is especially useful in that it tries to pick the most frequently used patterns, and explain those in a fun way.</p>
-<p>Not only that, it also emphasizes on the principles of object-oriented code, namely:</p>
-<ul>
-<li>Encapsulate what varies</li>
-<li>Favor composition over inheritance</li>
-<li>Program to interface, not implementation</li>
-<li>Strive for loosely coupled modules</li>
-</ul>
+            <p>Excerpts From: “Structure and Interpretation of Computer Programs.” (SICP)</p>
+<ol>
+<li><p>To evaluate a combination (a compound expression other than a special form), evaluate the subexpressions and then apply the value of the operator subexpression to the values of the operand subexpressions.</p>
+</li>
+<li><p>To apply a compound procedure to a set of arguments, evaluate the body of the procedure in a new environment. To construct this environment, extend the environment part of the procedure object by a frame in which the formal parameters of the procedure are bound to the arguments to which the procedure is applied.</p>
+</li>
+</ol>
+<img src="/images/eval-apply-sicp.jpg">
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">define</span> (<span class="name">eval</span> exp env)</span><br><span class="line">  (<span class="name">cond</span> ((<span class="name">self-evaluating</span>? exp) exp)</span><br><span class="line">        ((<span class="name">variable</span>? exp) (<span class="name">lookup-variable-value</span> exp env))</span><br><span class="line">        ((<span class="name">quoted</span>? exp) (<span class="name">text-of-quotation</span> exp))</span><br><span class="line">        ((<span class="name">assignment</span>? exp) (<span class="name">eval-assignment</span> exp env))</span><br><span class="line">        ((<span class="name">definition</span>? exp) (<span class="name">eval-definition</span> exp env))</span><br><span class="line">        ((<span class="name">if</span>? exp) (<span class="name">eval-if</span> exp env))</span><br><span class="line">        ((<span class="name">lambda</span>? exp)</span><br><span class="line">         (<span class="name">make-procedure</span> (<span class="name">lambda-parameters</span> exp)</span><br><span class="line">                         (<span class="name">lambda-body</span> exp)</span><br><span class="line">                         env))</span><br><span class="line">        ((<span class="name">begin</span>? exp) </span><br><span class="line">         (<span class="name">eval-sequence</span> (<span class="name">begin-actions</span> exp) env))</span><br><span class="line">        ((<span class="name">cond</span>? exp) (<span class="name">eval</span> (<span class="name">cond-&gt;if</span> exp) env))</span><br><span class="line">        ((<span class="name">application</span>? exp)</span><br><span class="line">         (<span class="name">apply</span> (<span class="name">eval</span> (<span class="name">operator</span> exp) env)</span><br><span class="line">                 (<span class="name">list-of-values</span> (<span class="name">operands</span> exp) env)))</span><br><span class="line">        (<span class="name">else</span></span><br><span class="line">         (<span class="name">error</span> <span class="string">"Unknown expression type -- EVAL"</span> exp))))</span><br><span class="line"></span><br><span class="line">(<span class="name">define</span> (<span class="name">apply</span> procedure arguments)</span><br><span class="line">  (<span class="name">cond</span> ((<span class="name">primitive-procedure</span>? procedure)</span><br><span class="line">         (<span class="name">apply-primitive-procedure</span> procedure arguments))</span><br><span class="line">        ((<span class="name">compound-procedure</span>? procedure)</span><br><span class="line">         (<span class="name">eval-sequence</span></span><br><span class="line">           (<span class="name">procedure-body</span> procedure)</span><br><span class="line">           (<span class="name">extend-environment</span></span><br><span class="line">             (<span class="name">procedure-parameters</span> procedure)</span><br><span class="line">             arguments</span><br><span class="line">             (<span class="name">procedure-environment</span> procedure))))</span><br><span class="line">        (<span class="name">else</span></span><br><span class="line">         (<span class="name">error</span></span><br><span class="line">          <span class="string">"Unknown procedure type -- APPLY"</span> procedure))))</span><br></pre></td></tr></table></figure>
 
         
         </div>
@@ -226,7 +213,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://yubinbai.com/2017/05/head-first-design-patterns/" data-id="cjqvpyd230012jtqodgfjupzi" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yubinbai.com/2019/01/eval-apply-sicp/" data-id="cjqvpyd1y000tjtqopmpcmuni" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -294,7 +281,7 @@ ga('send', 'pageview');
 
             
     
-        <a href="http://yubinbai.com/2017/05/head-first-design-patterns/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2017/05/head-first-design-patterns/">Comments</a>
+        <a href="http://yubinbai.com/2019/01/eval-apply-sicp/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yubinbai.com/2019/01/eval-apply-sicp/">Comments</a>
     
 
         </footer>
@@ -303,19 +290,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/01/the-xy-problem/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    Software engineers beware: the XY problem
-                
-            </div>
-        </a>
     
-    
-        <a href="/2017/05/design-patterns-gang-of-four/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/01/the-xy-problem/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">Design Patterns: Elements of Reusable Object Oriented Software</div>
+            <div class="article-nav-title">Software engineers beware: the XY problem</div>
         </a>
     
 </nav>
@@ -431,9 +409,9 @@ ga('send', 'pageview');
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://yubinbai.com/2017/05/head-first-design-patterns/';
+            this.page.url = 'http://yubinbai.com/2019/01/eval-apply-sicp/';
         
-        this.page.identifier = 'head-first-design-patterns';
+        this.page.identifier = 'eval-apply-sicp';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
